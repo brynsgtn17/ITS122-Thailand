@@ -2,24 +2,89 @@
     box-sizing: border-box;
 }
 
-.parent {
+/* LOG-IN PAGE */
+.log-in-container {
     display: flex;  
     justify-content: center;  
     align-items: center; 
 }
 
-form {
-    margin: 150px 10px 10px 10px;
-    padding: 70px;
-    max-width: 550px;
+.login-form {
+    margin: 100px 10px 10px 10px;
+    padding: 50px 70px;
+    width: 30%;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius: 12px;
+}
+
+.login-form-logo {
+    max-width:250px;
+    margin-bottom: 40px;
+    
+}
+.login-form-container {
+    text-align: center;
+}
+/* Smaller devices */
+@media screen and (max-width: 768px) {
+    .login-form {
+        margin: 50px 0px 10px 0px;
+        padding: 20px;
+        width: 90%;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+        border-radius: 8px;
+    }
+
+    .login-form-logo {
+        width:170px;
+        margin-bottom: 40px; 
+    }
+    .login-form-container {
+        text-align: center;
+    }
+  }
+
+/* SIGN-UP PAGE*/
+
+.sign-up-container {
+    display: flex;  
+    justify-content: center;  
+    align-items: center; 
+}
+
+.sign-up-form {
+    margin: 10px 10px 10px 10px;
+    padding: 50px 70px;
+    width: 40%;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     border-radius: 8px;
 }
-
-img {
-    max-width:250px;
-    margin-bottom: 40px;
-}
-.img-center {
+.sign-up-form-container {
     text-align: center;
 }
+/* Smaller devices */
+@media screen and (max-width: 768px) {
+    .sign-up-form {
+        margin: 10px 0px 10px 0px;
+        padding: 20px;
+        width: 90%;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+        border-radius: 8px;
+    }
+    .sign-up-form-logo {
+        width:170px;
+        margin-bottom: 40px; 
+    }
+    .sign-up-form-container {
+        text-align: center;
+    }
+  }
+
+.sign-up-form-logo {
+    max-width:250px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
