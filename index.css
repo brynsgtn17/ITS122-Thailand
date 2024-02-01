@@ -360,3 +360,20 @@ footer {
       font-size: 35px;
     }
   }
+
+  /* RESERVATIONS */
+
+  .reservation-form-container{
+    max-width: 50%;
+    margin: auto;
+  }
+
+  @media screen and (max-width: 520px) {
+    .reservation-form-container{
+      max-width: 70%;
+    }
+  }
+
+  .sitemap-reservations-page-background {
+    background-color: #9DB2BF;
+  }
