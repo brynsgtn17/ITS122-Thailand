@@ -309,3 +309,32 @@ footer {
   .sitemap-about-us-page-background {
     background-color: #9DB2BF;
   }
+
+  /* VENUES */
+  .venue-header{
+    font-size: 45px;
+    font-weight:700;
+    padding: 50px 0px 0px 40px;
+  }
+  @media screen and (max-width: 425px) {
+    .venue-header {
+      text-align: center;
+      padding: 50px 0px 0px;
+      font-size: 35px;
+    }
+  }
+  .card-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0px;
+  }
+
+  .venue-container {
+    margin: 20px;
+  }
+
+  .card-style{
+    border-radius: 12px;
+  }
