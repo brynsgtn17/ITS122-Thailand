@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Tag -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./index.css">
+    <title>Document</title>
+</head>
+<body>
+  <!-- NAV BAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-2 fs-6 nav-text">
+        <div class="container-fluid">
+          <a class="navbar-brand ms-3" href="#">
+            <img src="./images/brgy-logo.png" alt="" width="90" height="80" class="nav-logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto pe-2">
+              <li class="nav-item me-5">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item dropdown me-4">
+                <a class="nav-link dropdown-toggle pe-2" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Venues
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Venues</a></li>
+                  <li><a class="dropdown-item" href="#">Venue Schedule</a></li>
+                </ul>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link" href="#">Upcoming Events</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link" href="#">Reservations</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+              <li class="nav-item dropdown pe-3">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Manage
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Add/Remove Venues</a></li>
+                  <li><a class="dropdown-item" href="#">Remove Change Events</a></li>
+                  <li><a class="dropdown-item" href="#">Schedule Events</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!-- VENUE LIST (ADD/REMOVE VENUES) -->
+    <div class="venue-list-container">
+        <div class="py-5">
+            <div>
+                <h2 class="text-center py-3"><img src="./images/venue-icon.png" alt="" class="venue-list-logo">Event List</h2>
+            </div>
+            <div>
+                <table class="mx-auto">
+                    <tr>
+                      <th>Date</th>
+                      <th>Event Name</th>
+                      <th>Venue</th>
+                      <th>Client</th>
+                      <th></th>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>Sample Event</td>
+                      <td>Venue Name</td>
+                      <td>Client Name</td>
+                      <td><button type="button" class="btn btn-primary me-2">Remove</button><button type="button" class="btn btn-secondary">Edit</button></td>
+
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>Sample Event</td>
+                      <td>Venue Name</td>
+                      <td>Client Name</td>
+                      <td><button type="button" class="btn btn-primary me-2">Remove</button><button type="button" class="btn btn-secondary">Edit</button></td>
+
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>Sample Event</td>
+                      <td>Venue Name</td>
+                      <td>Client Name</td>
+                      <td><button type="button" class="btn btn-primary me-2">Remove</button><button type="button" class="btn btn-secondary">Edit</button></td>
+
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>Sample Event</td>
+                      <td>Venue Name</td>
+                      <td>Client Name</td>
+                      <td><button type="button" class="btn btn-primary me-2">Remove</button><button type="button" class="btn btn-secondary">Edit</button></td>
+
+                    </tr>
+                    <tr>
+                      <td>5</td>
+                      <td>Sample Event</td>
+                      <td>Venue Name</td>
+                      <td>Client Name</td>
+                      <td><button type="button" class="btn btn-primary me-2">Remove</button><button type="button" class="btn btn-secondary">Edit</button></td>
+
+                    </tr>
+                    <tr>
+                      <td>6</td>
+                      <td>Sample Event</td>
+                      <td>Venue Name</td>
+                      <td>Client Name</td>
+                      <td><button type="button" class="btn btn-primary button-list me-2">Remove</button><button type="button" class="btn btn-secondary">Edit</button></td>
+                    </tr>
+                  </table>
+            </div>
+            <div class="d-grid gap-2 col-6 mx-auto mt-5">
+                <button type="button" class="btn btn-secondary mx-auto" data-bs-toggle="modal" data-bs-target="#addModal">Add Event</button>
+            </div>
+            <div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Add New Event</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="mb-3">
+                          <label for="event-name" class="col-form-label">Event Name:</label>
+                          <input type="text" class="form-control" id="event-name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="client-name" class="col-form-label">Client Name:</label>
+                            <input type="text" class="form-control" id="client-name">
+                          </div>
+                        <div class="mb-3">
+                            <label for="event-date" class="col-form-label">Date:</label>
+                            <input type="date" class="form-control" id="event-date">
+                          </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Add</button>
+                      <button type="button" class="btn btn-primary">Cancel</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+        </div>
+    </div>
+
+    
+
+    <!-- CONTACT US -->
+    <div class="contact-us-container container-fluid">
+      <div class="row">
+        <div class="form-contact-us-container col-lg-6">
+          <p class="contact-paragraph">We would love to hear from you!</p>
+          <h1 class="contact-header">CONTACT US</h1>
+              <form class="contact-form-container">
+                <div class="form-group my-3">
+                  <input type="text" class="form-control" id="first-name" placeholder="First Name">
+                </div>
+                <div class="form-group my-3">
+                  <input type="text" class="form-control" id="last-name" placeholder="Last Name">
+                </div>
+                <div class="form-group my-3">
+                  <input type="tel" class="form-control" id="mobile number" placeholder="Mobile Number" pattern="[0-9]{4}-[0-9]{4}-[0-9]{3}">
+                </div>
+                <div class="form-group my-3">
+                    <input type="email" class="form-control" id="email-address" placeholder="Email@mail.com">
+                  </div>
+                <div class="form-group my-3">
+                  <textarea class="form-control" id="message" placeholder="Type you message here..." rows="5"></textarea>
+                </div>
+                <div class="d-grid">
+                  <button type="button" class="btn btn-secondary mb-3">Submit</button>
+                </div>
+                
+              </form>
+        </div>
+        <div class="details-container col-lg-6">
+          <div class="details-container-box">
+            <div>
+              <div>
+                <h3 class="contact-detail-header"><img src="./images/call-icon.png" alt="" class="contact-logo me-2 mb-3">CALL US</h3>
+                <p class="contact-details">Number</h1>
+              </div>
+              <div>
+                <h3 class="contact-detail-header"><img src="./images/location-icon.png" alt="" class="contact-logo me-2 mb-3">LOCATION</h3>
+                <p class="contact-details">Address here</p>
+              </div>
+              <div>
+                <h3 class="contact-detail-header"><img src="./images/business-hours.icon.png" alt="" class="contact-logo me-2 mb-2">BUSINESS HOURS</h3>
+                <p class="contact-details">Details here</p>
+              </div> 
+            </div>
+
+          </div>
+        </div>
+      </div>
+      </div>
+     
+    <!--SITEMAP -->
+    <div class="sitemap-container my-5">
+      <div>
+        <h1 class="sitemap-header">Sitemap</h1>
+        <ul class="sitemap-list">
+          <li>Venues</li>
+          <li>Venue Schedule</li>
+          <li>Upcoming Events</li>
+          <li>Reservations</li>
+          <li>About Us</li>
+          <li>Contact Us</li>
+        </ul>
+      </div>
+      <div>
+        <h1 class="sitemap-header">Links</h1>
+        <ul class="sitemap-list">
+          <li>Facebook Page</li>
+        </ul>
+      </div>
+      <div>
+        <h1 class="sitemap-header">Contacts</h1>
+        <ul class="sitemap-list">
+          <li>Phone Number</li>
+          <li>Email</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-light">
+      <p> © ITS-122 Thailand | All rights reserved</p>
+    </footer>
+
+
+    <!-- Bootstrap CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
+</html>
