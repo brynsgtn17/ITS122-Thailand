@@ -147,6 +147,18 @@ footer {
     font-weight: 800;
   }
 
+  #toTopBtn {
+   color: #DDE6ED;
+   position: fixed;
+   bottom: 26px;
+   right: 39px;
+   z-index: 98;
+   padding: 21px;
+   background-color: hsla(5,76%,62%,.8);
+   
+}
+
+
   /* ABOUT US */
   
   .about-us-header {
@@ -273,8 +285,6 @@ footer {
     margin-bottom: 50px;
   }
 
- 
-
 
 
   /* SITEMAP*/
@@ -377,3 +387,19 @@ footer {
   .sitemap-reservations-page-background {
     background-color: #9DB2BF;
   }
+
+    /* UPCOMING EVENTS */
+
+.upcoming-events-logo {
+  max-width: 50px;
+  margin-right: 20px;
+}
+
+.upcoming-events-header-container {
+  max-width: 50%;
+}
+@media screen and (max-width: 786px) {
+  .upcoming-events-header-container{
+    max-width: 80%;
+  }
+}
