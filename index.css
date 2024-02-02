@@ -403,3 +403,34 @@ footer {
     max-width: 80%;
   }
 }
+
+
+/* VENUE LIST (ADD/REMOVE VENUES) */
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 60%;
+}
+@media screen and (max-width: 425px) {
+  .table{
+    width: 100%;
+  }
+}
+
+
+td, th {
+  text-align: center;
+  padding: 8px;
+}
+
+.venue-list-logo {
+  max-width: 40px;
+  margin-right: 20px;
+}
+
+.venue-list-container{
+  /* height: 100vh; */
+  align-items: center;
+}
+
