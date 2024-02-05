@@ -10,8 +10,8 @@
     <title>Document</title>
 </head>
 <body>
-  <!-- NAV BAR -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-2 fs-6 nav-text">
+   <!-- NAV BAR -->
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-2 fs-6 nav-text">
     <div class="container-fluid">
       <a class="navbar-brand ms-3" href="#">
         <img src="./images/brgy-logo.png" alt="" width="90" height="80" class="nav-logo">
@@ -22,28 +22,37 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto pe-2">
           <li class="nav-item me-5">
-            <a class="nav-link active" aria-current="page" href="./home-client.html">Home</a>
+            <a class="nav-link active" aria-current="page" href="./home.html">Home</a>
           </li>
           <li class="nav-item dropdown me-4">
             <a class="nav-link dropdown-toggle pe-2" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Venues
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" href="./venues.html">Venues</a></li>
-              <li><a class="dropdown-item" href="./venueSchedule.html">Venue Schedule</a></li>
+              <li><a class="dropdown-item" href="./venues-admin.html">Venues</a></li>
+              <li><a class="dropdown-item" href="./venueSchedule-admin.html">Venue Schedule</a></li>
             </ul>
           </li>
           <li class="nav-item me-4">
-            <a class="nav-link" href="./upcomingEvents.html">Upcoming Events</a>
+            <a class="nav-link" href="./upcomingEvents-admin.html">Upcoming Events</a>
           </li>
           <li class="nav-item me-4">
-            <a class="nav-link" href="./reservations.html">Reservations</a>
+            <a class="nav-link" href="./reservations-admin.html">Reservations</a>
           </li>
           <li class="nav-item me-4">
-            <a class="nav-link" href="./aboutUs.html">About Us</a>
+            <a class="nav-link" href="./aboutUs-admin.html">About Us</a>
           </li>
           <li class="nav-item me-4">
-            <a class="nav-link" href="./contactUs.html">Contact Us</a>
+            <a class="nav-link" href="./contactUs-admin.html">Contact Us</a>
+          </li>
+          <li class="nav-item dropdown pe-3">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Manage
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="./venueList.html">Venues</a></li>
+              <li><a class="dropdown-item" href="./venueSchedule.html">Events</a></li>
+            </ul>
           </li>
         </ul>
       </div>
@@ -109,31 +118,31 @@
 
     <!--SITEMAP -->
     <div class="sitemap-container py-5 sitemap-reservations-page-background">
-      <div>
-        <h1 class="sitemap-header">Sitemap</h1>
-        <ul class="sitemap-list">
-          <li><a href="./venues.html" class="mail-text">Venues</a></li>
-          <li><a href="./venueSchedule.html" class="mail-text">Venue Schedule</a></li>
-          <li><a href="./upcomingEvents.html" class="mail-text">Upcoming Events</a></li>
-          <li><a href="./reservations.html" class="mail-text">Reservations</a></li>
-          <li><a href="./aboutUs.html" class="mail-text">About Us</a></li>
-          <li><a href="./contactUs.html" class="mail-text">Contact Us</a></li>
-        </ul>
+        <div>
+          <h1 class="sitemap-header">Sitemap</h1>
+          <ul class="sitemap-list">
+            <li><a href="./venues-admin.html" class="mail-text">Venues</a></li>
+            <li><a href="./venueSchedule-admin.html" class="mail-text">Venue Schedule</a></li>
+            <li><a href="./upcomingEvents-admin.html" class="mail-text">Upcoming Events</a></li>
+            <li><a href="./reservations-admin.html" class="mail-text">Reservations</a></li>
+            <li><a href="./aboutUs-admin.html" class="mail-text">About Us</a></li>
+            <li><a href="./contactUs-admin.html" class="mail-text">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h1 class="sitemap-header">Links</h1>
+          <ul class="sitemap-list">
+            <li><a href="https://www.facebook.com/brgylowerlangcangan?mibextid=JRoKGi" class="mail-text"><img src="./images/fb-logo.svg" alt="" class="mail-logo me-3">Facebook Page</a></li>
+          </ul>
+        </div>
+        <div>
+          <h1 class="sitemap-header">Contacts</h1>
+          <ul class="sitemap-list">
+            <li><img src="./images/call-icon.png" alt="" class="contact-logo me-3">0907-876-7381</li>
+            <li><a href="mailto:email@mail.com" class="mail-text"><img src="./images/email-logo.svg" alt="" class="mail-logo me-3">email@mail.com</a></li>
+          </ul>
+        </div>
       </div>
-      <div>
-        <h1 class="sitemap-header">Links</h1>
-        <ul class="sitemap-list">
-          <li><a href="https://www.facebook.com/brgylowerlangcangan?mibextid=JRoKGi" class="mail-text"><img src="./images/fb-logo.svg" alt="" class="mail-logo me-3">Facebook Page</a></li>
-        </ul>
-      </div>
-      <div>
-        <h1 class="sitemap-header">Contacts</h1>
-        <ul class="sitemap-list">
-          <li><img src="./images/call-icon.png" alt="" class="contact-logo me-3">0907-876-7381</li>
-          <li><a href="mailto:email@mail.com" class="mail-text"><img src="./images/email-logo.svg" alt="" class="mail-logo me-3">email@mail.com</a></li>
-        </ul>
-      </div>
-    </div>
 
     <!-- FOOTER -->
     <footer class="bg-dark text-light">

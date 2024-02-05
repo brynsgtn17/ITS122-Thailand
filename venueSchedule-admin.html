@@ -51,106 +51,65 @@
             </a>
             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
               <li><a class="dropdown-item" href="./venueList.html">Venues</a></li>
-              <li><a class="dropdown-item" href="./eventList.html">Events</a></li>
+              <li><a class="dropdown-item" href="./venueSchedule.html">Events</a></li>
             </ul>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-    <!-- VENUE LIST (ADD/REMOVE VENUES) -->
+
+    <!-- UPCOMING EVENTS -->
     <div>
-      <h2 class="text-center mt-5"><img src="./images/venue-icon.png" alt="" class="venue-list-logo">Venue List</h2>
-  </div>
-    <div class="venue-list-container">
-        <div class="py-4 m-5">
-            <div>
-                <table class="mx-auto">
-                    <tr>
-                      <th>No</th>
-                      <th>Venue Name</th>
-                      <th>Location</th>
-                      <th></th>
-                    </tr>
-                    <tr>
-                      <td>1</td>
-                      <td>Sample Venue</td>
-                      <td>Germany</td>
-                      <td><button type="button" class="btn btn-primary">Remove</button></td>
-
-                    </tr>
-                    <tr>
-                      <td>2</td>
-                      <td>Sample Venue</td>
-                      <td>Mexico</td>
-                      <td><button type="button" class="btn btn-primary">Remove</button></td>
-
-                    </tr>
-                    <tr>
-                      <td>3</td>
-                      <td>Sample Venue</td>
-                      <td>Austria</td>
-                      <td><button type="button" class="btn btn-primary">Remove</button>
-
-                    </tr>
-                    <tr>
-                      <td>4</td>
-                      <td>Sample Venue</td>
-                      <td>UK</td>
-                      <td><button type="button" class="btn btn-primary">Remove</button></td>
-
-                    </tr>
-                    <tr>
-                      <td>5</td>
-                      <td>Sample Venue</td>
-                      <td>Canada</td>
-                      <td><button type="button" class="btn btn-primary">Remove</button></td>
-
-                    </tr>
-                    <tr>
-                      <td>6</td>
-                      <td>Sample Venue</td>
-                      <td>Italy</td>
-                      <td><button type="button" class="btn btn-primary button-list">Remove</button></td>
-                    </tr>
-                  </table>
-            </div>
-            <div class="d-grid gap-2 col-6 mx-auto mt-5">
-                <button type="button" class="btn btn-secondary mx-auto" data-bs-toggle="modal" data-bs-target="#addModal">Add Venue</button>
-            </div>
-            <div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h1 class="modal-title fs-5" id="exampleModalLabel">Add New Venue</h1>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      <form>
-                        <div class="mb-3">
-                          <label for="venue-name" class="col-form-label">Venue Name:</label>
-                          <input type="text" class="form-control" id="venue-name">
-                        </div>
-                        <div class="mb-3">
-                            <label for="location" class="col-form-label">Location:</label>
-                            <input type="text" class="form-control" id="location">
-                          </div>
-                      </form>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Add</button>
-                      <button type="button" class="btn btn-primary">Cancel</button>
-                    </div>
-                  </div>
+        <div>
+            <h1 class="schedule-header">VENUE SCHEDULE</h1>
+        </div>
+        <div class="mb-5">
+            <div class="card border-dark schedule-card">
+                <div class="card-header">
+                  Date of Event
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Event Title</h5>
+                  <p class="card-text">Event Description With supporting text below as a natural lead-in to additional content.</p>
+                  <p>Name of Venue</p>
                 </div>
               </div>
-    
+              <div class="card border-dark schedule-card">
+                <div class="card-header">
+                  Date of Event
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Event Title</h5>
+                  <p class="card-text">Event Description With supporting text below as a natural lead-in to additional content.</p>
+                  <p>Name of Venue</p>
+                </div>
+              </div>
+              <div class="card border-dark schedule-card">
+                <div class="card-header">
+                  Date of Event
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Event Title</h5>
+                  <p class="card-text">Event Description With supporting text below as a natural lead-in to additional content.</p>
+                  <p>Name of Venue</p>
+                </div>
+              </div>
+              <div class="card border-dark schedule-card">
+                <div class="card-header">
+                  Date of Event
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Event Title</h5>
+                  <p class="card-text">Event Description With supporting text below as a natural lead-in to additional content.</p>
+                  <p>Name of Venue</p>
+                </div>
+              </div>
+              
+
         </div>
+        
     </div>
-
-    
-
-    
 
     <!-- CONTACT US -->
     <div class="contact-us-container container-fluid">
@@ -202,38 +161,41 @@
       </div>
       </div>
      
-    <!--SITEMAP -->
-    <div class="sitemap-container py-5 sitemap-reservations-page-background">
-      <div>
-        <h1 class="sitemap-header">Sitemap</h1>
-        <ul class="sitemap-list">
-          <li><a href="./venues-admin.html" class="mail-text">Venues</a></li>
-          <li><a href="./venueSchedule-admin.html" class="mail-text">Venue Schedule</a></li>
-          <li><a href="./upcomingEvents-admin.html" class="mail-text">Upcoming Events</a></li>
-          <li><a href="./reservations-admin.html" class="mail-text">Reservations</a></li>
-          <li><a href="./aboutUs-admin.html" class="mail-text">About Us</a></li>
-          <li><a href="./contactUs-admin.html" class="mail-text">Contact Us</a></li>
-        </ul>
+     <!--SITEMAP -->
+     <div class="sitemap-container my-5" data-aos="fade-up">
+        <div>
+          <h1 class="sitemap-header">Sitemap</h1>
+          <ul class="sitemap-list">
+            <li><a href="./venues-admin.html" class="mail-text">Venues</a></li>
+            <li><a href="./venueSchedule-admin.html" class="mail-text">Venue Schedule</a></li>
+            <li><a href="./upcomingEvents-admin.html" class="mail-text">Upcoming Events</a></li>
+            <li><a href="./reservations-admin.html" class="mail-text">Reservations</a></li>
+            <li><a href="./aboutUs-admin.html" class="mail-text">About Us</a></li>
+            <li><a href="./contactUs-admin.html" class="mail-text">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h1 class="sitemap-header">Links</h1>
+          <ul class="sitemap-list">
+            <li><a href="https://www.facebook.com/brgylowerlangcangan?mibextid=JRoKGi" class="mail-text"><img src="./images/fb-logo.svg" alt="" class="mail-logo me-3">Facebook Page</a></li>
+          </ul>
+        </div>
+        <div>
+          <h1 class="sitemap-header">Contacts</h1>
+          <ul class="sitemap-list">
+            <li><img src="./images/call-icon.png" alt="" class="contact-logo me-3">0907-876-7381</li>
+            <li><a href="mailto:email@mail.com" class="mail-text"><img src="./images/email-logo.svg" alt="" class="mail-logo me-3">email@mail.com</a></li>
+          </ul>
+        </div>
       </div>
-      <div>
-        <h1 class="sitemap-header">Links</h1>
-        <ul class="sitemap-list">
-          <li><a href="https://www.facebook.com/brgylowerlangcangan?mibextid=JRoKGi" class="mail-text"><img src="./images/fb-logo.svg" alt="" class="mail-logo me-3">Facebook Page</a></li>
-        </ul>
-      </div>
-      <div>
-        <h1 class="sitemap-header">Contacts</h1>
-        <ul class="sitemap-list">
-          <li><img src="./images/call-icon.png" alt="" class="contact-logo me-3">0907-876-7381</li>
-          <li><a href="mailto:email@mail.com" class="mail-text"><img src="./images/email-logo.svg" alt="" class="mail-logo me-3">email@mail.com</a></li>
-        </ul>
-      </div>
-    </div>
 
     <!-- FOOTER -->
     <footer class="bg-dark text-light">
       <p> © ITS-122 Thailand | All rights reserved</p>
     </footer>
+      
+    
+
 
 
     <!-- Bootstrap CSS -->
