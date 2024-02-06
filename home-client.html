@@ -12,6 +12,8 @@
     <link rel="stylesheet" type="text/css" href="./index.css">
     <!-- AOS Animation -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
     <title>Brgy Lower Langcangan</title>
 </head>
 <body>
@@ -134,11 +136,12 @@
                   <textarea class="form-control" id="message" placeholder="Type you message here..." rows="5"></textarea>
                 </div>
                 <div class="d-grid">
-                  <button type="button" class="btn btn-secondary mb-3">Submit</button>
+                  <button type="button" class="btn btn-secondary mb-3" data-bs-toggle="modal" data-bs-target="#submitModal">Submit</button>
                 </div>
                 
               </form>
         </div>
+    
         <div class="details-container col-lg-6" data-aos="flip-right">
           <div class="details-container-box">
             <div>
@@ -160,6 +163,24 @@
         </div>
       </div>
       </div>
+
+    <!--SUBMIT MODAL-->
+    <div class="modal fade" id="submitModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Your message successfully sent!</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
      
     <!--SITEMAP -->
     <div class="sitemap-container my-5" data-aos="fade-up">
@@ -197,8 +218,6 @@
       <!-- Back to Top Button -->
     <a href="#" id="toTopBtn" class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out" data-abc="true">&#9650;</a>
 
-      
-    
     <!-- AOS Animation Init -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
