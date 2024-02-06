@@ -54,67 +54,93 @@
               <li><a class="dropdown-item" href="./eventList.html">Events</a></li>
             </ul>
           </li>
+          <li class="nav-item me-4">
+            <a class="nav-link" href="./login.html">Logout</a>
+          </li>
         </ul>
       </div>
     </div>
   </nav>
     <!-- VENUE LIST (ADD/REMOVE VENUES) -->
     <div>
-      <h2 class="text-center mt-5"><img src="./images/venue-icon.png" alt="" class="venue-list-logo">Venue List</h2>
+      <h2 class="text-center mt-5"><img src="./images/venue-icon.png" alt="" class="venue-list-logo">Venues</h2>
   </div>
     <div class="venue-list-container">
         <div class="py-4 m-5">
             <div>
                 <table class="mx-auto">
                     <tr>
-                      <th>No</th>
                       <th>Venue Name</th>
-                      <th>Location</th>
+                      <th></th>
                       <th></th>
                     </tr>
                     <tr>
-                      <td>1</td>
                       <td>Sample Venue</td>
-                      <td>Germany</td>
-                      <td><button type="button" class="btn btn-primary">Remove</button></td>
-
+                      <td><button type="button" class="btn btn-outline-primary me-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">More Details</button></td>
+                      <td><button type="button" class="btn btn-outline-danger me-2">Remove</button><button type="button" class="btn btn-outline-secondary mx-auto" data-bs-toggle="modal" data-bs-target="#editVenueModal">Edit</button></td>
                     </tr>
                     <tr>
-                      <td>2</td>
                       <td>Sample Venue</td>
-                      <td>Mexico</td>
-                      <td><button type="button" class="btn btn-primary">Remove</button></td>
-
+                      <td><button type="button" class="btn btn-outline-primary me-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">More Details</button></td>
+                      <td><button type="button" class="btn btn-outline-danger me-2">Remove</button><button type="button" class="btn btn-outline-secondary mx-auto" data-bs-toggle="modal" data-bs-target="#editVenueModal">Edit</button></td>
                     </tr>
-                    <tr>
-                      <td>3</td>
-                      <td>Sample Venue</td>
-                      <td>Austria</td>
-                      <td><button type="button" class="btn btn-primary">Remove</button>
-
-                    </tr>
-                    <tr>
-                      <td>4</td>
-                      <td>Sample Venue</td>
-                      <td>UK</td>
-                      <td><button type="button" class="btn btn-primary">Remove</button></td>
-
-                    </tr>
-                    <tr>
-                      <td>5</td>
-                      <td>Sample Venue</td>
-                      <td>Canada</td>
-                      <td><button type="button" class="btn btn-primary">Remove</button></td>
-
-                    </tr>
-                    <tr>
-                      <td>6</td>
-                      <td>Sample Venue</td>
-                      <td>Italy</td>
-                      <td><button type="button" class="btn btn-primary button-list">Remove</button></td>
-                    </tr>
+                    
                   </table>
             </div>
+
+
+          <!-- MORE DETAILS MODAL -->
+          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-2" id="staticBackdropLabel">Venue Name</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="./images/image2.jpg" alt="" class="img-fluid">
+                  <p class="mt-5">Location</p>
+                  <p>Sample Description</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- EDIT EVENT MODAL -->
+          <div class="modal fade" id="editVenueModal" tabindex="-1" aria-labelledby="editVenueModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="editVenueModalLabel">Edit Event</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="venue-name" class="col-form-label">Venue Name:</label>
+                      <input type="text" class="form-control" id="venue-name">
+                    </div>
+                    <div class="mb-3">
+                      <label for="event-description" class="col-form-label">Venue Description:</label>
+                      <input type="text" class="form-control" id="venue-description">
+                    </div>
+                    <div class="mb-3">
+                        <label for="event-date" class="col-form-label">Image:</label>
+                        <input type="file" id="image" name="image" accept="image/*">
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Edit</button>
+                  <button type="button" class="btn btn-primary">Cancel</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+            <!-- ADD VENUE MODAL -->
             <div class="d-grid gap-2 col-6 mx-auto mt-5">
                 <button type="button" class="btn btn-secondary mx-auto" data-bs-toggle="modal" data-bs-target="#addModal">Add Venue</button>
             </div>
@@ -135,6 +161,14 @@
                             <label for="location" class="col-form-label">Location:</label>
                             <input type="text" class="form-control" id="location">
                           </div>
+                          <div class="mb-3">
+                            <label for="venue-description-name" class="col-form-label">Venue Description:</label>
+                            <input type="text" class="form-control" id="venue-description-name">
+                          </div>
+                          <div class="mb-3">
+                            <label for="event-date" class="col-form-label">Image:</label>
+                            <input type="file" id="image" name="image" accept="image/*">
+                        </div>
                       </form>
                     </div>
                     <div class="modal-footer">

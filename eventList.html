@@ -52,77 +52,107 @@
               </a>
               <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
                 <li><a class="dropdown-item" href="./venueList.html">Venues</a></li>
-                <li><a class="dropdown-item" href="./venueSchedule.html">Events</a></li>
+                <li><a class="dropdown-item" href="./eventList.html">Events</a></li>
               </ul>
+            </li>
+            <li class="nav-item me-4">
+              <a class="nav-link" href="./login.html">Logout</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <!-- VENUE LIST (ADD/REMOVE VENUES) -->
+    <!-- EVENT LIST (ADD/REMOVE/EDIT EVENTS) -->
     <div class="venue-list-container">
-        <div class="py-5">
+        <div class="py-5 my-5 table-container">
             <div>
-                <h2 class="text-center py-3"><img src="./images/venue-icon.png" alt="" class="venue-list-logo">Event List</h2>
+                <h2 class="text-center py-3"><img src="./images/venue-icon.png" alt="" class="venue-list-logo">Events</h2>
             </div>
             <div>
                 <table class="mx-auto">
                     <tr>
-                      <th>Date</th>
                       <th>Event Name</th>
-                      <th>Venue</th>
-                      <th>Client</th>
+                      <th>Date</th>
+                      
+
+                      <th></th>
                       <th></th>
                     </tr>
                     <tr>
+                      
+                      <td>Sample Event</td>
                       <td>1</td>
-                      <td>Sample Event</td>
-                      <td>Venue Name</td>
-                      <td>Client Name</td>
-                      <td><button type="button" class="btn btn-primary me-2">Remove</button><button type="button" class="btn btn-secondary">Edit</button></td>
-
+                      <td><button type="button" class="btn btn-outline-primary me-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">More Details</button></td>
+                      <td><button type="button" class="btn btn-outline-danger me-2">Remove</button><button type="button" class="btn btn-outline-secondary mx-auto" data-bs-toggle="modal" data-bs-target="#editModal">Edit</button></td>
                     </tr>
                     <tr>
-                      <td>2</td>
+                      
                       <td>Sample Event</td>
-                      <td>Venue Name</td>
-                      <td>Client Name</td>
-                      <td><button type="button" class="btn btn-primary me-2">Remove</button><button type="button" class="btn btn-secondary">Edit</button></td>
+                      <td>1</td>
+                      <td><button type="button" class="btn btn-outline-primary me-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">More Details</button></td>
+                      <td><button type="button" class="btn btn-outline-danger me-2">Remove</button><button type="button" class="btn btn-outline-secondary mx-auto" data-bs-toggle="modal" data-bs-target="#editModal">Edit</button></td>
 
                     </tr>
-                    <tr>
-                      <td>3</td>
-                      <td>Sample Event</td>
-                      <td>Venue Name</td>
-                      <td>Client Name</td>
-                      <td><button type="button" class="btn btn-primary me-2">Remove</button><button type="button" class="btn btn-secondary">Edit</button></td>
 
-                    </tr>
-                    <tr>
-                      <td>4</td>
-                      <td>Sample Event</td>
-                      <td>Venue Name</td>
-                      <td>Client Name</td>
-                      <td><button type="button" class="btn btn-primary me-2">Remove</button><button type="button" class="btn btn-secondary">Edit</button></td>
-
-                    </tr>
-                    <tr>
-                      <td>5</td>
-                      <td>Sample Event</td>
-                      <td>Venue Name</td>
-                      <td>Client Name</td>
-                      <td><button type="button" class="btn btn-primary me-2">Remove</button><button type="button" class="btn btn-secondary">Edit</button></td>
-
-                    </tr>
-                    <tr>
-                      <td>6</td>
-                      <td>Sample Event</td>
-                      <td>Venue Name</td>
-                      <td>Client Name</td>
-                      <td><button type="button" class="btn btn-primary button-list me-2">Remove</button><button type="button" class="btn btn-secondary">Edit</button></td>
-                    </tr>
                   </table>
             </div>
+
+          <!-- MORE DETAILS MODAL -->
+          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-2" id="staticBackdropLabel">Sample Event</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h1 class="fs-4 py-4">Venue Name</h1>
+                  <p>Event Date</p>
+                  <p>Client Name</p>
+                  <p>Sample Description</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- EDIT EVENT MODAL -->
+          <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="editModalLabel">Edit Event</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="mb-3">
+                        <label for="event-name" class="col-form-label">Event Name:</label>
+                        <input type="text" class="form-control" id="event-name">
+                      </div>
+                      <div class="mb-3">
+                        <label for="event-description" class="col-form-label">Event Description:</label>
+                        <input type="text" class="form-control" id="event-description">
+                      </div>
+                      <div class="mb-3">
+                          <label for="client-name" class="col-form-label">Client Name:</label>
+                          <input type="text" class="form-control" id="client-name">
+                        </div>
+                      <div class="mb-3">
+                          <label for="event-date" class="col-form-label">Date:</label>
+                          <input type="date" class="form-control" id="event-date">
+                        </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Edit</button>
+                    <button type="button" class="btn btn-primary">Cancel</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ADD EVENT MODAL -->
             <div class="d-grid gap-2 col-6 mx-auto mt-5">
                 <button type="button" class="btn btn-secondary mx-auto" data-bs-toggle="modal" data-bs-target="#addModal">Add Event</button>
             </div>
@@ -138,6 +168,10 @@
                         <div class="mb-3">
                           <label for="event-name" class="col-form-label">Event Name:</label>
                           <input type="text" class="form-control" id="event-name">
+                        </div>
+                        <div class="mb-3">
+                          <label for="event-description" class="col-form-label">Event Description:</label>
+                          <input type="text" class="form-control" id="event-description">
                         </div>
                         <div class="mb-3">
                             <label for="client-name" class="col-form-label">Client Name:</label>
@@ -156,7 +190,6 @@
                   </div>
                 </div>
               </div>
-    
         </div>
     </div>
 

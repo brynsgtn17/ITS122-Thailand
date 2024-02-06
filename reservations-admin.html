@@ -51,8 +51,11 @@
             </a>
             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
               <li><a class="dropdown-item" href="./venueList.html">Venues</a></li>
-              <li><a class="dropdown-item" href="./venueSchedule.html">Events</a></li>
+              <li><a class="dropdown-item" href="./eventList.html">Events</a></li>
             </ul>
+          </li>
+          <li class="nav-item me-4">
+            <a class="nav-link" href="./login.html">Logout</a>
           </li>
         </ul>
       </div>
@@ -63,10 +66,10 @@
     <!-- RESERVATIONS -->
     <div>
         <div>
-            <h1>EVENT RESERVATIONS</h1>
+            <h1 class="text-center mt-5">EVENT RESERVATIONS</h1>
         </div>
         <div>
-            <p>To enter an Event Request, please fill out the following form.</p>
+            <p class="text-center mb-5">To enter an Event Request, please fill out the following form.</p>
             <form class="row g-3 reservation-form-container p-5">
                 <p>Your Contact Information</p>
                 <div class="col-md-6">
@@ -85,10 +88,23 @@
                     <label for="phone-number" class="form-label">Phone Number</label>
                     <input type="tel" class="form-control" id="phone-number" pattern="[0-9]{4}-[0-9]{4}-[0-9]{3}">
                   </div>
+                  <div>
+                    <input type="checkbox" id="vehicle1" name="forgot" value="Bike">
+                    <label for="forgot"> Nalimutan ko label dito HAHAHA</label>
+                  </div>
             </form>      
 
                 <form class="row g-3 reservation-form-container my-5 p-5">
                 <p>Your Event Details</p>
+                <div class="col-md-14">
+                  <label for="event-date" class="form-label">Venue:</label>
+                  <select name="venue" id="venue">
+                    <option value="Venue1">Venue 1</option>
+                    <option value="Venue2">Venue 2</option>
+                    <option value="Venue3">Venue 3</option>
+                    <option value="Venue4">Venue 4</option>
+                  </select>
+                </div>
                 <div class="col-12">
                   <label for="event-name" class="form-label">Nature of this Event</label>
                   <input type="text-area" class="form-control" id="event-name" placeholder="(e.g., Birthday Party or Business Dinner)">
@@ -96,7 +112,7 @@
                 <div class="col-md-4">
                   <label for="event-date" class="form-label">Event Date</label>
                   <input type="date" class="form-control" id="event-date">
-                </div>
+                </div>           
                 <div class="col-md-4">
                     <label for="start-time" class="form-label">Start Time</label>
                     <input type="time" class="form-control" id="start-time">
@@ -108,6 +124,10 @@
                 <div class="col-12">
                     <label for="additional-message" class="form-label">Is there any additional information you would like to add?</label>
                     <textarea class="form-control" id="additional-message" placeholder="Type you message here..." rows="3"></textarea>
+                </div>
+                <div class="col-12">
+                  <input type="checkbox" id="vehicle1" name="forgotdin" value="Bike">
+                  <label for="forgotdin"> Nalimutan ko rin label dito HAHAHA</label>
                 </div>
                 <div class="col-12">
                   <button type="submit" class="btn btn-primary">Reserve</button>
