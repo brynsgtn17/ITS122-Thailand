@@ -388,7 +388,7 @@ footer {
       justify-content: center;
     }
     .venue-container{
-      max-width: 90% !important;
+      max-width: 100% !important;
     }
   
   } 
@@ -396,7 +396,6 @@ footer {
   .venue-container{
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     border-radius: 12px;
-    padding: 50px 0px;
     max-width: 40%;
   }
 
